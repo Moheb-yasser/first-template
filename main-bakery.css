@@ -1468,18 +1468,22 @@ z-index: 1030;
 visibility: hidden;
 opacity: 0;
 }
-.pages-link:hover ~.pages-dropdown{
+.pages-link:hover ~.pages-dropdown,.pages-dropdown:hover{
 visibility: visible;
 opacity: 1;
+}
+.team-link:hover,.testimonial-links:hover,.nonf-link:hover{
+background-color: #dee2e6;
 }
 .team-link,.testimonial-links,.nonf-link{
 color: rgb(33, 37, 41);
 text-align: left;
-width: 158px;
+width: 126px;
 height: 24px;
 padding: 4px 16px;
 display: block;
 text-wrap-mode: nowrap;
+transition: all 0.3s ease-in-out 0s;
 }
 .call-us-con{
 display: flex;
@@ -1496,7 +1500,9 @@ height: 46px;
 width: 46px;
 color:#EAA636;
 }
-.call-us p{ margin: 0px;}
+.call-us p{
+margin: 0px;
+}
 .call-us{
 padding: 0px 0px 0px 16px;
 width: 149.672px;
